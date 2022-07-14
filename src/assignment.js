@@ -1,8 +1,6 @@
 // ========================
 // DO NOT EDIT THIS BLOCK
-const assignment = {
-    
-};
+const assignment = {};
 // ========================
 
 
@@ -25,9 +23,7 @@ function sumOfNumbers(arrayOfNumbers) {
     return sum;
     // return arrayOfNumbers
 }
-
-console.log(sumOfNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
-// assignment.sumOfNumbers = sumOfNumbers;
+assignment.sumOfNumbers = sumOfNumbers;
 
 
 
@@ -53,9 +49,8 @@ function countEvenNumbers(arrayOfNumbers) {
         }
     }
     return count;
-    // return countEvenNumbers.length;
 }
-console.log(countEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
 assignment.countEvenNumbers = countEvenNumbers;
 
 /**
@@ -74,21 +69,14 @@ assignment.countEvenNumbers = countEvenNumbers;
 //  */
 
 
-
 function celsiusToFahrenheit(arrayOfNumbers) {
-    var Fahrenheit = (arrayOfNumbers * 1.8) + 32;
-    return Fahrenheit;
+    return arrayOfNumbers.map(item => Math.trunc((item * 1.8) + 32))
 }
 
-var temperaturesInCelsius = [10, 22, 35, 44, 51, 62, 79, 85, 93, 101]
-var temperaturesInFahrenheit = temperaturesInCelsius.map(celsiusToFahrenheit);
-
-console.log (Math.trunc([temperaturesInFahrenheit]));
-
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // // ========================
-// // DO NOT EDIT THIS BLOCK
-// module.exports = assignment;
-// // ========================
+// DO NOT EDIT THIS BLOCK
+module.exports = assignment;
+// ========================
 
